@@ -50,18 +50,6 @@
 
 - **Relancez le programme. Quelle est sa durée ?**
 
-    La durée est d'environ 25 secondes.
-
-- **Lancez le programme : quel est l’effet sur l’attaquant ?**
-
-    L'effet sur l'attaquant est radical : l'attaque par force brute devient extrêmement lente et inefficace en pratique.
-    ## Mission 5 : Temporisation
-
-### Questions & Réponses
----
-
-- **Relancez le programme. Quelle est sa durée ?**
-
     La durée est d'environ 25 secondes (pour un code secret situé autour de 5 000 tests avec 5 ms d'attente par essai).
 
 - **Lancez le programme : quel est l’effet sur l’attaquant ?**
