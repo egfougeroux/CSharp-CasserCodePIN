@@ -14,23 +14,29 @@ $limiteTentatives = 10000;
 
 // 2. Boucle de force brute
 while ($i < 10000 && !$trouve && $i < $limiteTentatives) {
-    echo $i . " ";
+    // Affichage formaté sur 4 chiffres
+    echo sprintf('%04d', $i) . " ";
 
     // Temporisation (Mission 5) : usleep prend des microsecondes (5000 µs = 5 ms)
     // usleep(5000);
 
     if ($i === $codeSecret) {
         $trouve = true;
-        echo "\n\nLe code secret est : " . $i . "\n";
+        echo "\n\nLe code secret est : " . sprintf('%04d', $i) . "\n";
+    } else {
+        $i++;
     }
-
-    $i++;
 }
 
 if (!$trouve) {
     echo "\n\nÉchec : Nombre maximal de tentatives atteint !\n";
 }
 
+echo "Fin du programme\n";
+
+// 3. Calcul de la durée
+$duree = microtime(true) - $start;
+echo "durée du programme: " . number_format($duree, 6) . " secondes\n";
 echo "Fin du programme\n";
 
 // 3. Calcul de la durée
