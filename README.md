@@ -57,5 +57,12 @@
     L'effet sur l'attaquant est dissuasif : l'attaque par force brute devient extrêmement lente et impraticable en conditions réelles :
     - **Sans délai :** tester 10 000 combinaisons prend une fraction de seconde (< 0,1 s).
     - **Avec 5 ms de délai :** le parcours complet prend jusqu'à 50 secondes ($10\,000 \times 0{,}005\text{ s}$).
-  
     - **Avec 1 seconde (1 000 ms) de délai :** tester l'ensemble des combinaisons prendrait jusqu'à **10 000 secondes, soit environ 2 heures et 46 minutes**. L'attaque en ligne perd toute viabilité, d'autant plus si un verrouillage de compte ou un blocage d'adresse IP intervient après quelques échecs.
+
+---
+
+## Équivalences multi-langages
+
+Le programme a également été développé avec la même logique algorithmique en :
+- **Python** (`casser_code_pin.py`)
+- **PHP** (`casser_code_pin.php`)
