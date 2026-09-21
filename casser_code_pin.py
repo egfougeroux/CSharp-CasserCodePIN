@@ -14,16 +14,17 @@ limite_tentatives = 10000
 
 # 2. Boucle de force brute
 while i < 10000 and not trouve and i < limite_tentatives:
-    print(i, end=" ")
+    # Affichage formaté sur 4 chiffres (ex: 0005 au lieu de 5)
+    print(f"{i:04d}", end=" ")
 
     # Temporisation (Mission 5) : 5 ms = 0.005 s / 1 s = 1.0 s
     # time.sleep(0.005)
 
     if i == code_secret:
         trouve = True
-        print(f"\n\nLe code secret est : {i}")
-
-    i += 1
+        print(f"\n\nLe code secret est : {i:04d}")
+    else:
+        i += 1
 
 if not trouve:
     print("\n\nÉchec : Nombre maximal de tentatives atteint !")
