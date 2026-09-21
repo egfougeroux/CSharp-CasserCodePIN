@@ -1,5 +1,6 @@
 <?php
 
+// 1. Code secret aléatoire
 $codeSecret = rand(0, 9999);
 // echo "Définissez le code PIN à 4 chiffres à trouver : ";
 // $codeSecret = (int)trim(fgets(STDIN));
