@@ -50,7 +50,7 @@
 
 - **Relancez le programme. Quelle est sa durée ?**
 
-    La durée est d'environ 25 secondes (pour un code secret situé autour de 5 000 tests avec 5 ms d'attente par essai).
+    La durée est d'environ 25 secondes.
 
 - **Lancez le programme : quel est l’effet sur l’attaquant ?**
 
